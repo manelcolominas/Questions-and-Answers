@@ -1,0 +1,31 @@
+node "C:\Users\pruiz\Desktop\Jo\Oci\Projectes\Programació\Questions-Answers\server\server.js"
+
+
+
+cd "C:\Users\pruiz\Desktop\Jo\Oci\Projectes\Programació\Questions-Answers\server"
+node server.js
+
+
+Database
+
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+mysql -u root -p
+password: mysql
+
+CREATE DATABASE qaa_db;
+
+show databases;
+use qaa_db;
+show tables;
+
+SELECT * FROM users;
+
+SELECT * FROM user_questions;
+
+Per eliminar la base de dades:
+DROP DATABASE qaa_db;
+
+curl -X GET http://localhost:3000/api/v1/metrics/users -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluLXRlc3QiLCJyb2xlIjoiQURNSU4ifQ.LG1XDoY6YpRpPu8h17hIQG5OjQiBjS_XwHAcficwIVE"
+
+curl -X GET https://questionsnanswers.com/api/v1/metrics/users -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluLXRlc3QiLCJyb2xlIjoiQURNSU4ifQ.LG1XDoY6YpRpPu8h17hIQG5OjQiBjS_XwHAcficwIVE"
+

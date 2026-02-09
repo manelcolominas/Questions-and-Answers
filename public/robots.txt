@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /server/
+Disallow: /scripts/
+Disallow: /style/
+
+Sitemap: https://www.questionsnanswers.com/sitemap.xml

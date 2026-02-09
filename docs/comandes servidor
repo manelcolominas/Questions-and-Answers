@@ -1,0 +1,41 @@
+
+## Connexió al Servidor ##
+
+cd C:\Users\pruiz\Desktop\Jo\Oci\Projectes\Programació	# Navegar al directori on es troba la clau
+ssh -i qaa-key-server.pem ec2-user@3.85.218.238	# Connectar-se al servidor AWS via SSH
+
+
+## Actualitzar el Projecte ##
+
+cd Questions-and-Answers	# Entrar a la carpeta del projecte
+git pull	# Descarregar els últims canvis del repositori
+
+
+## Configuració del Backend ##
+
+cd server	# Entrar a la carpeta del servidor
+npm install	# Instal·lar les dependències del projecte
+
+sudo npm install -g pm2	# Instal·lar PM2 globalment (si no està instal·lat)
+
+
+## Gestió de Processos amb PM2 ##
+
+sudo pm2 start server.js --name "qaa-backend"	# Iniciar el servidor amb PM2
+
+sudo pm2 save	# Guardar la llista de processos actuals
+sudo pm2 startup	# Configurar PM2 per arrencar automàticament a l'inici
+
+sudo pm2 status	# Veure l'estat dels processos
+
+sudo pm2 logs qaa-backend	# Veure els logs del servidor
+
+sudo pm2 restart qaa-backend	# Reiniciar el servidor
+
+sudo pm2 delete all	# Esborrar tots els processos de PM2
+
+
+## Resolució de Problemes ##
+
+sudo lsof -i :443	# Llistar el procés que utilitza un port específic
+sudo kill -9 <PID>	# Aturar un procés amb el seu ID

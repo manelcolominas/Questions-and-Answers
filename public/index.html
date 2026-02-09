@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-adsense-account" content="ca-pub-6647059274172663">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brain Buster - The ultimate Questions & Answers trivia game. Challenge yourself with various topics and beat the clock!">
+    <meta name="keywords" content="trivia, game, questions, answers, quiz, brain buster, knowledge, online trivia, free quiz game">
+    <meta name="author" content="Brain Buster Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.questionsnanswers.com/">
+    <meta property="og:title" content="Questions & Answers - Brain Buster Trivia">
+    <meta property="og:description" content="Brain Buster - The ultimate Questions & Answers trivia game. Challenge yourself with various topics and beat the clock!">
+    <meta property="og:image" content="https://www.questionsnanswers.com/images/share-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.questionsnanswers.com/">
+    <meta property="twitter:title" content="Questions & Answers - Brain Buster Trivia">
+    <meta property="twitter:description" content="Brain Buster - The ultimate Questions & Answers trivia game. Challenge yourself with various topics and beat the clock!">
+    <meta property="twitter:image" content="https://www.questionsnanswers.com/images/share-image.jpg">
+
+    <link rel="canonical" href="https://www.questionsnanswers.com/">
+
+    <title>Questions & Answers - Brain Buster Trivia</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Brain Buster",
+      "description": "The ultimate Questions & Answers trivia game. Challenge yourself with various topics and beat the clock!",
+      "genre": ["Trivia", "Quiz"],
+      "playMode": "SinglePlayer",
+      "applicationCategory": "Game",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "Brain Buster Team"
+      }
+    }
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6647059274172663"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-section">
+            <h1>Brain Buster</h1>
+        </div>
+
+        <div class="main-content">
+            <div id="error-message" style="display: none; color: red; text-align: center; margin-bottom: 10px;"></div>
+            <div class="container" id="game-area">
+                <h2><i class="fas fa-question-circle"></i> Trivia Challenge</h2>
+                <div id="timer">
+
+                    <div class="timer-display">
+                        Time: <span id="time-left">20</span>s
+                    </div>
+
+                    <div class="time-bar-container">
+                        <div id="time-bar" class="time-bar"></div>
+                    </div>
+
+                </div>
+
+                <div class="category" id="question-category">General</div>
+                <div class="difficulty" id="question-difficulty">Easy</div>
+
+                <div id="question">Loading question...</div>
+
+                <div id="answers">
+                    <!-- Answer buttons will be added here -->
+                </div>
+
+                <div id="explanation" style="display: none;"></div>
+
+                <button id="next-question"> Next Question</button>
+            </div>
+
+            <!-- Monetization Section -->
+            <div class="monetization-area">
+                <!-- Ad Placeholder -->
+                <div class="ad-container">
+                    <p class="ad-label">Advertisement</p>
+                    <div class="ad-box">
+                        <!-- Google AdSense Code will go here -->
+                        <p>Support us by disabling AdBlock</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>&copy; 2023 Brain Buster. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+
+
+    <div id="rules-popup" class="rules-popup" style="display: none;">
+        <div class="rules-content">
+            <h2><i class="fas fa-info-circle"></i> Welcome to Brain Buster!</h2>
+
+            <div class="rules-list">
+                <h3>How to Play:</h3>
+                <ul>
+                    <li><strong>Challenge yourself:</strong> Answer trivia questions across various topics.</li>
+                    <li><strong>Beat the clock:</strong> You have 20 seconds to select the correct answer.</li>
+                    <li><strong>Learn as you go:</strong> Get instant feedback and explanations for every question.</li>
+                    <li><strong>Have fun:</strong> Test your knowledge and see how many you can get right!</li>
+                </ul>
+            </div>
+
+            <div class="rules-actions">
+                <button id="start-playing" class="start-button">
+                    <i class="fas fa-play"></i> Start Playing!
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/emoji.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Aquesta carpeta conté documentació, notes i apunts del projecte.
