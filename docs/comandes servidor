@@ -2,7 +2,7 @@
 ## Connexió al Servidor ##
 
 cd C:\Users\pruiz\Desktop\Jo\Oci\Projectes\Programació	# Navegar al directori on es troba la clau
-ssh -i qaa-key-server.pem ec2-user@3.85.218.238	# Connectar-se al servidor AWS via SSH
+ssh -i "qaa-server-key.pem" ubuntu@54.242.204.18	# Connectar-se al servidor AWS via SSH
 
 
 ## Actualitzar el Projecte ##
