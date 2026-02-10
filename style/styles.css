@@ -121,7 +121,7 @@ body::before {
 }
 
 /* Show side ads only on large screens */
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     .side-ad {
         display: block;
     }
