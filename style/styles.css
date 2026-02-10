@@ -104,6 +104,29 @@ body::before {
 }
 /* ------------------------------------------------------- */
 
+.side-ads {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.side-ad {
+    display: none; /* Hidden by default on mobile */
+    width: 160px; /* Standard skyscraper width */
+    flex-shrink: 0;
+    position: sticky;
+    top: 20px;
+}
+
+/* Show side ads only on large screens */
+@media (min-width: 1200px) {
+    .side-ad {
+        display: block;
+    }
+}
+
 .main-container {
     position: relative;
     min-height: 100vh;
@@ -113,6 +136,7 @@ body::before {
     gap: 24px;
     max-width: 800px;
     margin: 0 auto;
+    flex-grow: 1;
 }
 
 .header-section {
